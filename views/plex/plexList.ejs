@@ -1,0 +1,8 @@
+<h1><%=this.serverName%></h1>
+<div>
+    <ul class="unstyled">
+        <% for( var i = 0; i < this.dirs.length; i++ ) { %>
+        <li><a class='btn dirs' key="<%= $(this.dirs[i]).attr('key') %>" ><%= $(this.dirs[i]).attr('title') %></a></li>
+        <% } %>
+    </ul>
+</div>

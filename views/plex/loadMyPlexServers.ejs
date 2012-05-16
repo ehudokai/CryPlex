@@ -1,0 +1,8 @@
+<h1>Choose a server</h1>
+<div>
+    <ul class="unstyled">
+        <% for( var i = 0; i < this.length; i++ ) { %>
+        <li><a class='btn server' name='<%= $(this[i]).attr('name') %>' host='<%= $(this[i]).attr('host') %>' port='<%= $(this[i]).attr('port') %>' ><%= $(this[i]).attr('name') %></a></li>
+        <% } %>
+    </ul>
+</div>
