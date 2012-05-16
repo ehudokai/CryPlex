@@ -1,0 +1,17 @@
+{
+    "name": "Chrome Plex Client",
+    "description":"A plex client to watch videos from your plex server",
+    "version":"1",
+    "app":{
+        "launch":{
+            "local_path":"main.html"
+        }
+    },
+    "icons":{
+        "16":"icon_16.png",
+        "128":"icon_128.png"
+    },
+    "permissions": [
+        "*://*/*"
+    ]
+}

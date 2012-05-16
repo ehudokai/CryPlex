@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="canjs/can.jquery.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <style>
+            body {
+                padding-top: 40px;
+            }
+        </style>
+        <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css" />
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand">Chrome Plex Client</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li>
+                                <a id="setServer" title="Use this if you know your servers IP/port">Specify Server</a>
+                            </li>
+                            <li class="active">
+                                <a id="useMyPlex" title="Use this to get a list of your myPlex registered servers">myPlex Server List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mainContainer" class="container">
+            <div class="row">
+                <div id="main" class="offset3 span4">Loading...</div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="canMain.js"></script>
+    </body>
+</html>
