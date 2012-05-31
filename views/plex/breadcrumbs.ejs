@@ -1,0 +1,17 @@
+<ul class="nav">
+<% if(this.loggedIn){ %>
+    <li>
+        <a id="logout" href="#" title="logout to remove access to your myPlex account">Logout</a>
+    </li>
+        <% for (var i=0; i<this.pathList.length; i++){ %>
+        <li>
+            <a key="<%=this.pathList[i].key%>" href="#" index="<%=i%>"><%=this.pathList[i].name%></a>
+        </li>
+        <% }; %>
+    
+<% } else { %>
+    <li>
+        <a id="login" href="#" title="login to your myPlex account">Login</a>
+    </li>
+<% } %>
+</ul>

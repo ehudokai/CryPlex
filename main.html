@@ -4,7 +4,7 @@
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="canjs/can.jquery.min.js"></script>
+        <script type="text/javascript" src="canjs/can.jquery.js"></script>
         <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <style>
             body {
@@ -22,17 +22,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand">Chrome Plex Client</a>
-                    <div class="nav-collapse">
+                    <a href="#" class="brand">Chrome Plex Client</a>
+                    <div id="breadcrumbs" class="nav-collapse">
                         <ul class="nav">
-                            <li>
-                                <a id="setServer" title="Use this if you know your servers IP/port">Specify Server</a>
-                            </li>
-                            <li class="active">
-                                <a id="useMyPlex" title="Use this to get a list of your myPlex registered servers">myPlex Server List</a>
-                            </li>
+                            
                         </ul>
                     </div>
+                    <ul class="pull-right nav">
+                        <li>
+                            <a id="loading">loading...</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
